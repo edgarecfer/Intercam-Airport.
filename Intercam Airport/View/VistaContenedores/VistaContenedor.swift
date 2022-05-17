@@ -10,14 +10,17 @@ struct VistaContenedor: View {
                 TabView{
                     VistaMapa()
                         .tabItem{
-                            Label("Mapa", systemImage: "person")
+                            Image(systemName: "location.north.circle.fill")
+                                .foregroundColor(.white)
                         }
                     
                     VistaLista()
                         .tabItem{
-                            Label("Lista", systemImage: "person")
+                            Image(systemName: "list.dash")
+                                .foregroundColor(.white)
                         }
                 }
+                .accentColor(.black)
             }
             
             VStack{
