@@ -13,6 +13,11 @@
 		2CB76A3D2833E86E00F28B37 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CB76A3C2833E86E00F28B37 /* Preview Assets.xcassets */; };
 		2CB76A472833E96E00F28B37 /* vistaPrincipal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB76A462833E96E00F28B37 /* vistaPrincipal.swift */; };
 		2CB76A492833EAD400F28B37 /* VMVistaPrincipal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB76A482833EAD400F28B37 /* VMVistaPrincipal.swift */; };
+		2CB76A4E2833F7E400F28B37 /* VistaContenedor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB76A4D2833F7E400F28B37 /* VistaContenedor.swift */; };
+		2CB76A532833FAE400F28B37 /* VistaMapa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB76A522833FAE400F28B37 /* VistaMapa.swift */; };
+		2CB76A552833FAEF00F28B37 /* VistaLista.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB76A542833FAEF00F28B37 /* VistaLista.swift */; };
+		2CB76A592833FE0600F28B37 /* VMVistaLista.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB76A582833FE0600F28B37 /* VMVistaLista.swift */; };
+		2CB76A5B2833FE3400F28B37 /* MLista.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB76A5A2833FE3400F28B37 /* MLista.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +28,11 @@
 		2CB76A3C2833E86E00F28B37 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2CB76A462833E96E00F28B37 /* vistaPrincipal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vistaPrincipal.swift; sourceTree = "<group>"; };
 		2CB76A482833EAD400F28B37 /* VMVistaPrincipal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VMVistaPrincipal.swift; sourceTree = "<group>"; };
+		2CB76A4D2833F7E400F28B37 /* VistaContenedor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VistaContenedor.swift; sourceTree = "<group>"; };
+		2CB76A522833FAE400F28B37 /* VistaMapa.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VistaMapa.swift; sourceTree = "<group>"; };
+		2CB76A542833FAEF00F28B37 /* VistaLista.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VistaLista.swift; sourceTree = "<group>"; };
+		2CB76A582833FE0600F28B37 /* VMVistaLista.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VMVistaLista.swift; sourceTree = "<group>"; };
+		2CB76A5A2833FE3400F28B37 /* MLista.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLista.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +87,7 @@
 		2CB76A432833E91600F28B37 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				2CB76A5A2833FE3400F28B37 /* MLista.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -84,6 +95,9 @@
 		2CB76A442833E92100F28B37 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				2CB76A572833FDF100F28B37 /* VistaLista */,
+				2CB76A502833FACD00F28B37 /* VistaMapa */,
+				2CB76A4C2833F7C100F28B37 /* VistaContenedores */,
 				2CB76A4A2833EAD800F28B37 /* VistaPrincipal */,
 			);
 			path = View;
@@ -92,6 +106,8 @@
 		2CB76A452833E92B00F28B37 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				2CB76A562833FDD700F28B37 /* MVVistaLista */,
+				2CB76A4F2833F85700F28B37 /* VMVistaContenedor */,
 				2CB76A4B2833EAF300F28B37 /* VMVistaPrincipal */,
 			);
 			path = ViewModel;
@@ -111,6 +127,45 @@
 				2CB76A482833EAD400F28B37 /* VMVistaPrincipal.swift */,
 			);
 			path = VMVistaPrincipal;
+			sourceTree = "<group>";
+		};
+		2CB76A4C2833F7C100F28B37 /* VistaContenedores */ = {
+			isa = PBXGroup;
+			children = (
+				2CB76A4D2833F7E400F28B37 /* VistaContenedor.swift */,
+			);
+			path = VistaContenedores;
+			sourceTree = "<group>";
+		};
+		2CB76A4F2833F85700F28B37 /* VMVistaContenedor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = VMVistaContenedor;
+			sourceTree = "<group>";
+		};
+		2CB76A502833FACD00F28B37 /* VistaMapa */ = {
+			isa = PBXGroup;
+			children = (
+				2CB76A522833FAE400F28B37 /* VistaMapa.swift */,
+			);
+			path = VistaMapa;
+			sourceTree = "<group>";
+		};
+		2CB76A562833FDD700F28B37 /* MVVistaLista */ = {
+			isa = PBXGroup;
+			children = (
+				2CB76A582833FE0600F28B37 /* VMVistaLista.swift */,
+			);
+			path = MVVistaLista;
+			sourceTree = "<group>";
+		};
+		2CB76A572833FDF100F28B37 /* VistaLista */ = {
+			isa = PBXGroup;
+			children = (
+				2CB76A542833FAEF00F28B37 /* VistaLista.swift */,
+			);
+			path = VistaLista;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,8 +240,13 @@
 			files = (
 				2CB76A472833E96E00F28B37 /* vistaPrincipal.swift in Sources */,
 				2CB76A492833EAD400F28B37 /* VMVistaPrincipal.swift in Sources */,
+				2CB76A4E2833F7E400F28B37 /* VistaContenedor.swift in Sources */,
 				2CB76A382833E86900F28B37 /* ContentView.swift in Sources */,
+				2CB76A5B2833FE3400F28B37 /* MLista.swift in Sources */,
+				2CB76A592833FE0600F28B37 /* VMVistaLista.swift in Sources */,
+				2CB76A532833FAE400F28B37 /* VistaMapa.swift in Sources */,
 				2CB76A362833E86900F28B37 /* Intercam_AirportApp.swift in Sources */,
+				2CB76A552833FAEF00F28B37 /* VistaLista.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

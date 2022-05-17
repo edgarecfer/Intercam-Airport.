@@ -1,6 +1,7 @@
 import SwiftUI
 
 struct vistaPrincipal: View {
+    @EnvironmentObject var mostrar: VMVistaPrincipal
     @StateObject var vPrincipal = VMVistaPrincipal()
     
     var body: some View {
@@ -31,14 +32,15 @@ struct vistaPrincipal: View {
             Spacer()
             
             Button(action: {
-                print("Buscar")
+                //Haciendo uso de la variable propagada
+                mostrar.avanzar.toggle()
             }){
                 Text("SEARCH")
                     .bold()
                     .foregroundColor(Color.white)
+                    .frame(maxWidth: .infinity)
             }
             .padding()
-            .frame(maxWidth: .infinity)
             .background(Color("Azul"))
             .cornerRadius(20)
             
