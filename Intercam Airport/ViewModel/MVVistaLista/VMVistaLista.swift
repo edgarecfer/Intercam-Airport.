@@ -4,9 +4,6 @@ class VMVistaLista: ObservableObject{
     @Published var aeropuertos: [MLista] = []
     
     func recuperarAeropuertos(lat: Double, long: Double, radio: Double){
-        print(lat)
-        print(long)
-        print(radio)
         guard let url = URL(string: "https://aviation-reference-data.p.rapidapi.com/airports/search?lat=\(lat)&lon=\(long)&radius=\(Int(radio))") else {return}
         let headers = [
             "X-RapidAPI-Host": "aviation-reference-data.p.rapidapi.com",
