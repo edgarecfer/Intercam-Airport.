@@ -26,6 +26,9 @@ struct vistaPrincipal: View {
             
             Slider(value: $vPrincipal.valorSlider, in: 1...1000, step: 1)
                 .accentColor(Color("Azul"))
+                .onDisappear{
+                    mostrar.radio = vPrincipal.valorSlider
+                }
             
             Text("RADIUS IN KM")
                 .foregroundColor(Color("GrisClaro"))

@@ -2,19 +2,20 @@ import SwiftUI
 
 struct VistaContenedor: View {
     @EnvironmentObject var mostrar: VMVistaPrincipal
+    @EnvironmentObject var ubic: VMVistaMapas
     
     var body: some View {
         ZStack{
             VStack{
                 //Implentación del tabBar para la navegación
                 TabView{
-                    VistaMapa()
+                    VistaMapa(radio: mostrar.radio)
                         .tabItem{
                             Image(systemName: "location.north.circle.fill")
                                 .foregroundColor(.white)
                         }
                     
-                    VistaLista()
+                    VistaLista(lat: ubic.lat, long: ubic.long, radio: mostrar.radio)
                         .tabItem{
                             Image(systemName: "list.dash")
                                 .foregroundColor(.white)

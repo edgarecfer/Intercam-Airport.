@@ -2,6 +2,9 @@ import SwiftUI
 
 struct VistaLista: View {
     @StateObject var lista = VMVistaLista()
+    var lat: Double
+    var long: Double
+    var radio: Double
     
     var body: some View {
         ZStack{
@@ -13,7 +16,7 @@ struct VistaLista: View {
                 VStack(alignment: .leading, spacing: 10){
                     ScrollView{
                         ForEach(lista.aeropuertos, id:\.name){item in
-                            Lista(nombre: item.name,codigo: item.alpha2countryCode,latitud: item.latitude, longitud: item.longitude)
+                            Lista(nombre: item.name ?? "NA", codigo: item.alpha2countryCode ?? "NA", latitud: item.latitude ?? 0.0, longitud: item.longitude ?? 0.0)
                         }
                         Spacer()
                     }
@@ -21,12 +24,9 @@ struct VistaLista: View {
                 .padding()
             }
         }
-    }
-}
-
-struct VistaLista_Previews: PreviewProvider {
-    static var previews: some View {
-        VistaLista()
+        .onAppear{
+            lista.recuperarAeropuertos(lat: lat, long: long, radio: radio)
+        }
     }
 }
 

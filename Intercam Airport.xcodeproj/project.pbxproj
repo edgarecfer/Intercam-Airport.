@@ -18,6 +18,8 @@
 		2CB76A552833FAEF00F28B37 /* VistaLista.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB76A542833FAEF00F28B37 /* VistaLista.swift */; };
 		2CB76A592833FE0600F28B37 /* VMVistaLista.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB76A582833FE0600F28B37 /* VMVistaLista.swift */; };
 		2CB76A5B2833FE3400F28B37 /* MLista.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB76A5A2833FE3400F28B37 /* MLista.swift */; };
+		2CB76A5F28343DD800F28B37 /* VMVistaMapas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB76A5E28343DD800F28B37 /* VMVistaMapas.swift */; };
+		2CB76A6328346F4C00F28B37 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2CB76A6228346F4C00F28B37 /* Settings.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +35,8 @@
 		2CB76A542833FAEF00F28B37 /* VistaLista.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VistaLista.swift; sourceTree = "<group>"; };
 		2CB76A582833FE0600F28B37 /* VMVistaLista.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VMVistaLista.swift; sourceTree = "<group>"; };
 		2CB76A5A2833FE3400F28B37 /* MLista.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLista.swift; sourceTree = "<group>"; };
+		2CB76A5E28343DD800F28B37 /* VMVistaMapas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VMVistaMapas.swift; sourceTree = "<group>"; };
+		2CB76A6228346F4C00F28B37 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,7 +91,7 @@
 		2CB76A432833E91600F28B37 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				2CB76A5A2833FE3400F28B37 /* MLista.swift */,
+				2CB76A5C28343CE600F28B37 /* ModeloVistaLista */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -106,6 +110,7 @@
 		2CB76A452833E92B00F28B37 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				2CB76A5D28343DBD00F28B37 /* VMVistaMapa */,
 				2CB76A562833FDD700F28B37 /* MVVistaLista */,
 				2CB76A4F2833F85700F28B37 /* VMVistaContenedor */,
 				2CB76A4B2833EAF300F28B37 /* VMVistaPrincipal */,
@@ -148,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				2CB76A522833FAE400F28B37 /* VistaMapa.swift */,
+				2CB76A6228346F4C00F28B37 /* Settings.bundle */,
 			);
 			path = VistaMapa;
 			sourceTree = "<group>";
@@ -166,6 +172,22 @@
 				2CB76A542833FAEF00F28B37 /* VistaLista.swift */,
 			);
 			path = VistaLista;
+			sourceTree = "<group>";
+		};
+		2CB76A5C28343CE600F28B37 /* ModeloVistaLista */ = {
+			isa = PBXGroup;
+			children = (
+				2CB76A5A2833FE3400F28B37 /* MLista.swift */,
+			);
+			path = ModeloVistaLista;
+			sourceTree = "<group>";
+		};
+		2CB76A5D28343DBD00F28B37 /* VMVistaMapa */ = {
+			isa = PBXGroup;
+			children = (
+				2CB76A5E28343DD800F28B37 /* VMVistaMapas.swift */,
+			);
+			path = VMVistaMapa;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -227,6 +249,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2CB76A3D2833E86E00F28B37 /* Preview Assets.xcassets in Resources */,
+				2CB76A6328346F4C00F28B37 /* Settings.bundle in Resources */,
 				2CB76A3A2833E86E00F28B37 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -245,6 +268,7 @@
 				2CB76A5B2833FE3400F28B37 /* MLista.swift in Sources */,
 				2CB76A592833FE0600F28B37 /* VMVistaLista.swift in Sources */,
 				2CB76A532833FAE400F28B37 /* VistaMapa.swift in Sources */,
+				2CB76A5F28343DD800F28B37 /* VMVistaMapas.swift in Sources */,
 				2CB76A362833E86900F28B37 /* Intercam_AirportApp.swift in Sources */,
 				2CB76A552833FAEF00F28B37 /* VistaLista.swift in Sources */,
 			);
@@ -378,6 +402,7 @@
 				DEVELOPMENT_TEAM = 3Z9J72YNC5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Otorga permiso para acceder a su ubicación y tener mejores resultados?";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -407,6 +432,7 @@
 				DEVELOPMENT_TEAM = 3Z9J72YNC5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Otorga permiso para acceder a su ubicación y tener mejores resultados?";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
